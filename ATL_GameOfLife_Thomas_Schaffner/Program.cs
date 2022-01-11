@@ -146,7 +146,7 @@ namespace ATL_GameOfLife_Thomas_Schaffner
                     }
                     catch (Exception ex)
                     {
-                        System.Console.WriteLine("Exception, Details of the Exception:", ex);
+                        System.Console.WriteLine("Exception, Details of the Exception:", ex.Source);
                     }
 
 
@@ -258,7 +258,7 @@ namespace ATL_GameOfLife_Thomas_Schaffner
             }
             catch (Exception ex)
             {
-                System.Console.WriteLine("Exception, Details of the Exception:", ex);
+                System.Console.WriteLine("Exception, Details of the Exception:", ex.Source);
             }
         }
 
@@ -490,7 +490,7 @@ namespace ATL_GameOfLife_Thomas_Schaffner
                     break;
             }
         }
-
+      
         /*
          * Spielfeld aktualisieren 
          * zuweisung von neu berechnetem Spielfeld zum bestehenden für die nächste Generation
